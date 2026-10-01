@@ -1,0 +1,34 @@
+{
+  "session_directory": "One folder per recording session",
+  "files": {
+    "rx1.csv": "RX1 CSI samples",
+    "rx2.csv": "RX2 CSI samples",
+    "metadata.json": "Activity, x/y location, subject, note, ports and session information"
+  },
+  "recommended_activity_labels": [
+    "empty",
+    "standing",
+    "sitting",
+    "walking",
+    "running",
+    "falling",
+    "lying"
+  ],
+  "csv_columns": [
+    "host_timestamp_iso",
+    "rx_timestamp_ms",
+    "rssi",
+    "sequence",
+    "csi"
+  ],
+  "future_ml_pipeline": [
+    "validate and synchronize RX1/RX2 streams",
+    "parse CSI strings into numeric vectors",
+    "remove invalid/outlier packets",
+    "phase/amplitude preprocessing",
+    "window into fixed-duration samples",
+    "generate tensors/spectrograms",
+    "split by subject/session to avoid leakage",
+    "train CNN/1D-CNN/LSTM/Transformer or hybrid HAR model"
+  ]
+}

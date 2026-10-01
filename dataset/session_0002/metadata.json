@@ -1,0 +1,26 @@
+{
+  "session_id": "session_0002",
+  "created_utc": "2026-10-01T16:18:05.433042+00:00",
+  "num_persons": 1,
+  "persons": [
+    {
+      "activity": "standing",
+      "x": 0.0,
+      "y": 0.0
+    }
+  ],
+  "subject": "S01",
+  "note": "",
+  "rx1_port": "COM9",
+  "rx2_port": "COM11",
+  "baud": 115200,
+  "data_format": "Raw CSI I/Q",
+  "csi_format": "I0,Q0,I1,Q1,...",
+  "csv_structure": "One row per received CSI packet",
+  "files": [
+    "rx1.csv",
+    "rx2.csv",
+    "metadata.json"
+  ],
+  "stopped_utc": "2026-10-01T16:18:10.203976+00:00"
+}
